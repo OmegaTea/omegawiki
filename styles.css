@@ -1,5 +1,5 @@
 body {
-	font-family: "Microsoft Sans Serif", sans-serif;
+	font-family: sans-serif;
 	line-height: 1.6;
 }
 div.container {
@@ -38,8 +38,8 @@ table td {
 	text-align: center;
 	padding: 5px;
 }
-h1 {
-	font-family: "Sitka Heading", serif;
+h1, h2 {
+	font-family: "Sitka Header", "serif";
 	margin-bottom: 0px;
 }
 u {
