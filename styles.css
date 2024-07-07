@@ -1,0 +1,104 @@
+body {
+	font-family: "Microsoft Sans Serif", sans-serif;
+	line-height: 1.6;
+}
+div.container {
+	padding: 10px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	margin: auto;
+	width: 75%;
+}
+div.container2 {
+	padding: 10px;
+	background-color: #eee;
+	border: 1px solid #c6c6c6;
+	margin: auto;
+	width: 75%;
+}
+div.flex-container {
+	display: flex;
+	gap: 20px;
+}
+div.paragraphs {
+	flex: 1;
+}
+div.table {
+	flex-shrink: 0;
+	width: 512px;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+table tr {
+	border: 1px solid #ccc;
+}
+table td {
+	text-align: center;
+	padding: 5px;
+}
+h1 {
+	font-family: "Sitka Heading", sans-serif;
+	margin-bottom: 0px;
+}
+u {
+	text-decoration: underline;
+}
+a:link {
+	color: #E00076;
+}
+a:visited {
+	color: #9A0A9A;
+}
+.inner-table tr {
+	border: none;
+}
+.table {
+	padding: 5px;
+	border-collapse: collapse;
+}
+.table th {
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+.image-container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow:hidden;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.image-container:hover img {
+	filter: brightness(70%);
+}
+.image-container:hover .caption {
+	padding-bottom: 90px;
+}
+.image-container img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: brightness(100%);
+	transition: filter .7s ease;
+}
+.caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background: linear-gradient(to bottom, transparent, black);
+	text-align: center;
+	box-sizing: border-box;
+	transition: padding-bottom .7s ease;
+}
+.infobox-main {
+	text-align: left;
+	vertical-align: top;
+}

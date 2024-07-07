@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Source for the Thing You Just Read</title>
+    <script>
+        const texts = [
+            "It was revealed to me in a dream.",
+            "Okay, so, long story. I first heard about this information from the news, obviously since it was related to omegatea I HAD to add it to the wiki. Thing is, this news source? Not exactly the most trustworthy, if you know what I mean. Last time I trusted them my house got raided by goblins and all that was left when I came back were the clothes on my back and a can of corn, half eaten. They even took my plywood. MY PLYWOOD! Anyways, I figured it wouldn't hurt to look into it a bit more. I looked around on the internet, and eventually stumbled across an omegatea forum, which I didn't think existed, but if you look far enough apparently it's a thing? Some people had brought up a seperate news article, and a pretty reputable guy on the site (he had about 13,000 cred points, which seems like a lot) had responded to it and given some sources. I managed to get into contact with him through the site, but he told me I would only get the sources if I could answer his riddles three. I accepted, but failed the third one. I was about to close out of the website and continue my search elsewhere, but he said he felt bad and gave me the sources anyways. I noted them down to put on the website. It's a shame that computer burnt down in the fire (also caused by goblins).",
+            "I just made that up.",
+            "I saw a guy do this in a toothpaste ad once.",
+			"It is known."
+        ];
+        function getRandomText() {
+            const randomIndex = Math.floor(Math.random() * texts.length);
+            return texts[randomIndex];
+        }
+        function displayRandomText() {
+            const randomText = getRandomText();
+            document.getElementById('random-text').textContent = randomText;
+        }
+        window.onload = function() {
+            displayRandomText();
+        }; // i completely stole this code from chatgpt i cant lie
+    </script>
+</head>
+<body>
+    <div>
+        <span id="random-text"></span>
+    </div>
+</body>
+</html> 
