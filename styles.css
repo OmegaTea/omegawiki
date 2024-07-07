@@ -29,7 +29,8 @@ div.table {
 }
 table {
 	border-collapse: collapse;
-	width: auto;
+	width: 100%;
+	max-width: 100%;
 }
 table tr {
 	border: 1px solid #ccc;
