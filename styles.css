@@ -40,8 +40,17 @@ table td {
 	padding: 5px;
 }
 h1, h2 {
-	font-family: "Sitka Header", "serif";
+	font-family: "Wittgenstein", serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
 	margin-bottom: 0px;
+}
+.title {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 u {
 	text-decoration: underline;
