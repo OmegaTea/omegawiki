@@ -25,7 +25,7 @@ div.paragraphs {
 }
 div.table {
 	flex-shrink: 0;
-	width: 512px;
+	width: 30%;
 }
 table {
 	border-collapse: collapse;
