@@ -3,12 +3,6 @@ body {
 	line-height: 1.6;
 	background-color:#FFFFFF;
 }
-button svg {
-	width: 10%;
-	height: auto;
-	fill: #000;
-	transition: fill 0.3s;
-}
 div.container {
 	padding: 10px;
 	background-color: #f9f9f9;
