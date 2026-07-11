@@ -31,7 +31,7 @@ div.special {
 	
 	<div class="containercb">
 		<p class="title">
-			<div class=special><font size="2">If you can't read anything, refresh.</font></div>
+			<div class=special><font size="2">If you can't read anything, click <button onclick="fixColors()">here</button> or refresh the page.</font></div>
 			<b><font size="+3">CoffeeBoi</font></b>
 			<br>
 			<font size="-1">From OmegaWiki, the Tea Encyclopedia</font>
@@ -45,7 +45,7 @@ div.special {
 			<h2><u>Early Childhood</u></h2>
 			&emsp;CoffeeBoi's earliest memory is at 2 years old, finishing the construction of the exterior of the Burj Khalifa. There was an incident during construction where he fell off but got caught by a really big bird. The bird turned out to be <a href="https://en.wikipedia.org/wiki/Big_Bird">Big Bird</a>, famous <a href="https://en.wikipedia.org/wiki/Sesame_Street">Sesame Street</a> character.<sup><a href="../real_sources">[3]</a></sup>
 			<br>
-			&emsp;As an elementary schooler, CoffeeBoi took the infamous "Young Ben PNG" photo. That same year, he ended up becoming friends with <a href="gbin">gbin</a>, after parachuting down to him from a <a href="https://en.wikipedia.org/wiki/Scaled_Composites_Proteus">Model 281 Proteus</a>, which he had set to crash into the school building below. After gbin critiqued his form, they later ended up crashing another into the abandoned right wing of the school.<sup><a href="../real_sources">[4]</a></sup>
+			&emsp;As an elementary schooler, CoffeeBoi took the infamous "Young Ben PNG" photo. That same year, he ended up becoming friends with █████, after parachuting down to him from a <a href="https://en.wikipedia.org/wiki/Scaled_Composites_Proteus">Model 281 Proteus</a>, which he had set to crash into the school building below. After █████ critiqued his form, they later ended up crashing another into the abandoned right wing of the school.<sup><a href="../real_sources">[4]</a></sup>
 			<br>
 			&emsp;His middle school memories before the eighth grade have been completely wiped, due to <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">COVID-19</a> hitting a vital nerve in the memory of those years.<sup><a href="../real_sources">[5]</a></sup> In the eighth grade, CoffeeBoi (at the time known as BritainBoi) met <a href="omegatea">omegatea</a>, conversing for the first time after several months of beating omegatea to a pulp after spanish class.<sup><a href="../real_sources">[6]</a></sup>
 			<h2><u>High School and Drug Addiction</u></h2>
@@ -84,7 +84,7 @@ div.special {
 		let b = Math.floor(Math.random() * 256)
 		return `rgb(${r},${g},${b})`;
 	}
-	
+
 	for (let sheet of document.styleSheets) { // like idek whats happening here. i get the randcolor bit but what is this
 		try {
 			for (let rule of sheet.cssRules) {
@@ -100,6 +100,26 @@ div.special {
 			}
 		} catch (e) { // no clue why this is here but apparently if you remove it this just doesnt work. ok
 
+		}
+	}
+
+	function fixColors() { // yeah yeah i just duplicated the function to be able to use it on the button im not the brightest ok
+		for (let sheet of document.styleSheets) { 
+			try {
+				for (let rule of sheet.cssRules) {
+					if (rule.style) {
+						for (let prop of ['color', 'background-color', 'border-color']) {
+							if (rule.style[prop]) {
+								if (!rule.selectorText.includes('.teal') && !rule.selectorText.includes('.special')) {
+									rule.style[prop] = randColor();
+								}
+							}
+						}
+					}
+				}
+			} catch (e) {
+
+			}
 		}
 	}
 </script>
